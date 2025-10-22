@@ -1,10 +1,10 @@
 [project]
 name = "tbank2qif"
 version = "0.2.0"
-description = "Tinkoff Bank CSV → Quicken QIF/CSV converter (CLI + batch)"
+description = "TBank CSV → Quicken QIF/CSV converter (CLI + batch)"
 requires-python = ">=3.9"
 readme = "README.md"
-authors = [{name="Your Name"}]
+authors = [{name="Dmitry Efremov"}]
 
 [project.scripts]
 tbank2qif = "tbank2qif.cli:main"
