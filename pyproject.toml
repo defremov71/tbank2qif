@@ -3,6 +3,9 @@ name = "tbank2qif"
 version = "0.2.1"
 description = "TBank CSV → Quicken QIF/CSV converter (CLI + batch)"
 requires-python = ">=3.9"
+dependencies = [
+  "pandas>=2.0"
+]
 readme = "README.md"
 authors = [{name="Dmitry Efremov"}]
 

@@ -23,9 +23,20 @@ source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -e .
 ```
 
-## Запуск
+## Запуск без установки, из директории проекта
 
-### Одиночный файл → в каталог data/Input/ (создаст в data/Output `import.qif` и `quicken.csv`)
+### С параметрами по умолчанию → отчет operations.csv поместить в каталог data/Input/ (создаст в data/Output `import.qif` и `quicken.csv`и новые категории `caterory.csv`)
+```bash
+PYTHONPATH=scr python -m tbank2qif
+```
+
+## Запуск после установки (Обязательно из корня проекта, иначе не найдет входные файлы!!!)
+### Файл операций → в каталог data/Input/ (создаст в data/Output `import.qif` и `quicken.csv` и новые категории `caterory.csv`)
+```bash
+tbank2qif -i ./data/Input/operations.csv --out-dir ./data/Output
+```
+
+### Файл операций → в каталог data/Input/ (создаст в data/Output `import.qif` и `quicken.csv`и новые категории `caterory.csv`)
 ```bash
 tbank2qif -i ./data/Input/operations.csv --out-dir ./data/Output
 ```
